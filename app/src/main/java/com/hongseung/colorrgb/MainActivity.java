@@ -99,13 +99,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         int intColor = Color.rgb(intR, intG, intB);
-
-        // 컬러 int 값을 16진수로 변환하고, 포멧도 바꿔줌
-        String hexColor = String.format("#%06X", (0xFFFFFF & intColor));
-
         button.setBackgroundColor(intColor); // 배경색을 바꿈
 //        button.setText(""+intColor);
 
+        // 버튼 글자로 색상코드를 넣을꺼다.
+        // 컬러 int 값을 16진수로 변환하고, 포멧도 바꿔줌
+        String hexColor = String.format("#%06X", (0xFFFFFF & intColor));
         button.setText(hexColor);
     }
 }

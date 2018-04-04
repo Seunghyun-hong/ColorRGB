@@ -102,10 +102,12 @@ public class MainActivity extends AppCompatActivity {
             intB = Integer.parseInt(stringB);
         }
 
-        // 어두운 바탕일때 글자 색 바꾸기
+        // 어두운 바탕일때 아닐때 구분해서 글자 색 지정
         int intRGB = intR + intG + intB;
         if (intRGB < 328) {
-            button.setTextColor(Color.rgb(255,255,255));
+            button.setTextColor(Color.rgb(255, 255, 255));
+        } else {
+            button.setTextColor(Color.rgb(0, 0, 0));
         }
 
         // 배경색 바꾸기

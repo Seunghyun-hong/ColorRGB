@@ -78,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         // 255 한계체크
         if (intR > 255) {
             intR = 255;
-            mColorRedEditText.setText(""+intR);
+            mColorRedEditText.setText("" + intR);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
         } else {
             intR = Integer.parseInt(stringR);
@@ -86,7 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (intG > 255) {
             intG = 255;
-            mColorGreenEditText.setText(""+intG);
+            mColorGreenEditText.setText("" + intG);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
 
         } else {
@@ -95,21 +95,27 @@ public class MainActivity extends AppCompatActivity {
 
         if (intB > 255) {
             intB = 255;
-            mColorBlueEditText.setText(""+intB);
+            mColorBlueEditText.setText("" + intB);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
 
         } else {
             intB = Integer.parseInt(stringB);
         }
 
+        // 어두운 바탕일때 글자 색 바꾸기
+        int intRGB = intR + intG + intB;
+        if (intRGB < 328) {
+            button.setTextColor(Color.rgb(255,255,255));
+        }
 
+        // 배경색 바꾸기
         int intColor = Color.rgb(intR, intG, intB);
         button.setBackgroundColor(intColor); // 배경색을 바꿈
 //        button.setText(""+intColor);
 
         // 버튼 글자로 색상코드를 넣을꺼다.
         // 컬러 int 값을 16진수로 변환하고, 포멧도 바꿔줌
-        String hexColor = String.format("#%06X", (0xFFFFFF & intColor));
+        String hexColor = String.format("#%06X", (0xFFFFFF & intColor)); // 어디서 보고 가져온거라 뜻은 잘 모름.
         button.setText(hexColor);
     }
 }

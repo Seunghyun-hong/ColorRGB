@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     private EditText mColorRedEditText;
     private EditText mColorGreenEditText;
     private EditText mColorBlueEditText;
-    private Button mColorButton11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         //R 널체크
         if (mColorRedEditText.getText().length() == 0) {
             stringR = "0";
+            mColorRedEditText.setText(stringR);
             Toast.makeText(this, "빈칸은 0으로 대체되었습니다.", Toast.LENGTH_SHORT).show();
         } else {
             stringR = mColorRedEditText.getText().toString();
@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
         //G 널체크
         if (mColorGreenEditText.getText().length() == 0) {
             stringG = "0";
+            mColorGreenEditText.setText(stringG);
             Toast.makeText(this, "빈칸은 0으로 대체되었습니다.", Toast.LENGTH_SHORT).show();
         } else {
             stringG = mColorGreenEditText.getText().toString();
@@ -63,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
         //B 널체크
         if (mColorBlueEditText.getText().length() == 0) {
             stringB = "0";
+            mColorBlueEditText.setText(stringB);
             Toast.makeText(this, "빈칸은 0으로 대체되었습니다.", Toast.LENGTH_SHORT).show();
         } else {
             stringB = mColorBlueEditText.getText().toString();
@@ -76,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         // 255 한계체크
         if (intR > 255) {
             intR = 255;
+            mColorRedEditText.setText(""+intR);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
         } else {
             intR = Integer.parseInt(stringR);
@@ -83,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (intG > 255) {
             intG = 255;
+            mColorGreenEditText.setText(""+intG);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
 
         } else {
@@ -91,6 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
         if (intB > 255) {
             intB = 255;
+            mColorBlueEditText.setText(""+intB);
             Toast.makeText(this, "255초과되는 값을 적어 255로 조정하였습니다.", Toast.LENGTH_SHORT).show();
 
         } else {

@@ -106,9 +106,11 @@ public class MainActivity extends AppCompatActivity {
         int intRGB = intR + intG + intB;
         if (intRGB < 328) {
             button.setTextColor(Color.rgb(255, 255, 255));
-        } else {
+        } else if (intRGB > 328) {
             button.setTextColor(Color.rgb(0, 0, 0));
         }
+
+
 
         // 배경색 바꾸기
         int intColor = Color.rgb(intR, intG, intB);

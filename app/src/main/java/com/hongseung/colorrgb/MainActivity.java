@@ -111,7 +111,6 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-
         // 배경색 바꾸기
         int intColor = Color.rgb(intR, intG, intB);
         button.setBackgroundColor(intColor); // 배경색을 바꿈

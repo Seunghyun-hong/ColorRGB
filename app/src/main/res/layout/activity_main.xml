@@ -7,10 +7,20 @@
     android:orientation="vertical"
     tools:context="com.hongseung.colorrgb.MainActivity">
 
+    <TextView
+        android:text="여기 광고 넣을꺼다!"
+        android:textSize="48sp"
+        android:textColor="#fafafa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp">
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp">
 
         <TextView
             android:layout_width="wrap_content"

@@ -8,11 +8,15 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText mColorRedEditText;
     private EditText mColorGreenEditText;
     private EditText mColorBlueEditText;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +28,11 @@ public class MainActivity extends AppCompatActivity {
         mColorGreenEditText = findViewById(R.id.color_green_edit_text);
         mColorBlueEditText = findViewById(R.id.color_blue_edit_text);
 
+
+        //광고
+        mAdView = (AdView) findViewById(R.id.adView);  //우리는 아직 아이디 안줬으니까 레이아웃에 가서 아이디로 adView라고 정함
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
 
     }
 

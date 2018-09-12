@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         String stringG;
         String stringB;
 
+
         //R 널체크
         if (mColorRedEditText.getText().length() == 0) {
             stringR = "0";

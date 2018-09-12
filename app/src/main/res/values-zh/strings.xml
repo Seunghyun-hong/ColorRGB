@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ColorRGB</string>
+    <string name="valueMaxReadjust">把超过255的数字调整为255</string>
+    <string name="valueNullChecked">空格被0取代了</string>
+</resources>

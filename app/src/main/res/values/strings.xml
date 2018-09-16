@@ -3,4 +3,5 @@
     <string name="valueNullChecked">The blanks were replaced by zero.</string>
     <string name="valueMaxReadjust">The value over 255 has been adjusted to 255.</string>
     <string name="banner_ad_unit_id" translatable="false">ca-app-pub-3008643822833798/3311189393</string>
+    <string name="adView">This is an ad.</string>
 </resources>

@@ -3,4 +3,5 @@
     <string name="app_name">ColorRGB</string>
     <string name="valueNullChecked">빈칸은 0으로 대체되었습니다.</string>
     <string name="valueMaxReadjust">255초과 되는 값은 255로 조정하였습니다.</string>
+    <string name="adView">광고입니다</string>
 </resources>

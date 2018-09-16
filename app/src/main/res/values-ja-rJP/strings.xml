@@ -3,4 +3,5 @@
     <string name="app_name">ColorRGB</string>
     <string name="valueMaxReadjust">255 を超える値は 255 に調整されています.</string>
     <string name="valueNullChecked">空白はゼロに交換された.</string>
+    <string name="adView">これは広告です。</string>
 </resources>

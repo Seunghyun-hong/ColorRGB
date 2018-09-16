@@ -9,6 +9,7 @@
     tools:context="com.hongseung.colorrgb.MainActivity">
 
     <com.google.android.gms.ads.AdView
+        android:contentDescription="@string/adView"
         android:id="@+id/adView"
         ads:adSize="BANNER"
         ads:adUnitId="@string/banner_ad_unit_id"
